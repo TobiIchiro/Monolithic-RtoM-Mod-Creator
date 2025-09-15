@@ -40,6 +40,7 @@ class MainWindow(QWidget):
         layout.addWidget(self.modsGroup)
 
         self.submitButton = QPushButton("Generate Mod")
+        self.submitButton.clicked.connect(self.createMod)
         layout.addWidget(self.submitButton)
 
         self.setLayout(layout)
